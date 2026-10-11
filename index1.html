@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Un sabor peruano</title>
+  <style>
+    :root { --morado:#072027; --oscuro:#29123f; --lila:#eadcf5; --crema:#fffaf5; --texto:#35283d; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:var(--texto); background:var(--crema); line-height:1.6; }
+    header { background:linear-gradient(135deg,#3c1759,#74419a); color:white; padding:18px 7%; display:flex; align-items:center; justify-content:space-between; gap:18px; flex-wrap:wrap; }
+    .logo { font-weight:800; letter-spacing:.5px; font-size:1.15rem; }
+    nav { display:flex; gap:20px; flex-wrap:wrap; }
+    nav a { color:white; text-decoration:none; font-weight:600; }
+    nav a:hover { text-decoration:underline; }
+    .hero { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:35px; padding:55px 7%; background:linear-gradient(110deg,#fffaf5 50%,#f0e4f7); }
+    .eyebrow { color:var(--morado); font-weight:800; text-transform:uppercase; letter-spacing:2px; font-size:.82rem; }
+    h1 { color:var(--oscuro); font-size:clamp(2.5rem,5vw,4.4rem); line-height:1.05; margin:12px 0 18px; }
+    .hero p { font-size:1.1rem; max-width:520px; }
+    .boton { display:inline-block; margin-top:12px; padding:12px 22px; border-radius:30px; background:var(--morado); color:white; text-decoration:none; font-weight:bold; }
+    .hero img { width:100%; height:360px; object-fit:cover; object-position:center; border-radius:25px; box-shadow:0 15px 35px #35164a25; }
+    section { padding:55px 7%; }
+    .titulo { color:var(--oscuro); font-size:clamp(1.8rem,3vw,2.5rem); margin:0 0 12px; }
+    .intro { max-width:720px; margin:0 0 28px; }
+    .dos-columnas { display:grid; grid-template-columns:1fr 1fr; gap:30px; align-items:center; }
+    .dos-columnas img { width:100%; height:310px; object-fit:cover; border-radius:20px; }
+    .lavanda { background:#f0e6f6; }
+    .tarjetas { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .tarjeta { background:white; border-radius:18px; overflow:hidden; box-shadow:0 8px 24px #35164a12; }
+    .tarjeta img { display:block; width:100%; height:190px; object-fit:cover; }
+    .tarjeta .contenido { padding:18px; }
+    .tarjeta h3 { color:var(--morado); margin:0 0 8px; }
+    .ingredientes { display:grid; grid-template-columns:1fr 1fr; gap:25px; align-items:center; }
+    .ingredientes img { width:100%; max-height:390px; object-fit:cover; border-radius:20px; }
+    ul { padding-left:22px; }
+    li { margin:8px 0; }
+    .nota { background:white; border-left:5px solid var(--morado); border-radius:8px; padding:16px 18px; margin-top:18px; }
+    footer { text-align:center; padding:30px 7%; background:var(--oscuro); color:white; }
+    footer strong { color:#e6cafa; }
+    @media (max-width:750px) { .hero,.dos-columnas,.ingredientes { grid-template-columns:1fr; } .hero { padding-top:35px; } .hero img { height:270px; } .tarjetas { grid-template-columns:1fr; } nav { gap:12px; } section { padding:40px 6%; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">☂ SABORES DEL PERÚ 𐌉 REPUBLICA DE FRANCIA 7093</div>
+    <nav aria-label="Navegación principal">
+      <a href="#presentacion">Presentación</a>
+      <a href="#ingredientes">Ingredientes</a>
+      <a href="#especial">¿Qué lo hace especial?</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="presentacion">
+      <div>
+        <div class="eyebrow">Un postre con identidad peruana</div>
+        <h1>Keke de<br>chicha morada</h1>
+        <p>Una versión diferente del keke tradicional, inspirada en el sabor y el color de nuestra querida chicha morada. Es una opción deliciosa para disfrutar y compartir en familia.</p>
+        <a class="boton" href="#ingredientes">Conoce sus ingredientes ↓</a>
+      </div>
+      <img src="keke-principal.jpg" alt="Keke de color morado servido en un plato">
+    </section>
+
+    <section class="dos-columnas">
+      <div>
+        <h1 class="titulo">¿Qué es este postre?</h1>
+        <p>El keke de chicha morada es un postre que combina la repostería con uno de los ingredientes más representativos del Perú: el maíz morado. Se caracteriza por su sabor dulce, su textura esponjosa y su atractivo color. Además, puede formar parte de una alimentación equilibrada si se prepara con cantidades moderadas de azúcar y grasas y se consume en porciones adecuadas.
+
+El maíz morado contiene antocianinas, pigmentos naturales con propiedades antioxidantes que ayudan a proteger las células del cuerpo. De esta manera, este postre permite disfrutar de un sabor diferente mientras se revalora un ingrediente tradicional de nuestra cultura peruana.
+
+Es ideal para reuniones familiares, celebraciones o como parte de una propuesta de emprendimiento escolar.</p>
+        <p>Es una alternativa original para disfrutar en reuniones familiares, celebraciones o como parte de una propuesta de emprendimiento escolar.</p>
+      </div>
+      <img src="keke-cortado.jpg" alt="Una rebanada de keke de chicha morada">
+    </section>
+
+    <section class="lavanda" id="ingredientes">
+      <h2 class="titulo">Ingredientes principales</h2>
+      <p class="intro">La receta puede variar según la preparación. Estos son algunos ingredientes que utilizamos con mi equipo de EPT para elaborarlo:</p>
+      <div class="ingredientes">
+      <div>
+          <ul>
+            <li>Choclo morado</li>
+            <li> Harina de trigo</li>
+            <li> Huevos</li>
+            <li>Azúcar (según el gusto de la persona ).</li>
+            <li>Aceite o mantequilla</li>
+            <li>Polvo de hornear</li>
+            <li>Canela o clavo de olor (opcional).</li>
+          </ul>
+          <div class="nota"><strong>Consejo:</strong> mide los ingredientes y sigue una receta probada para lograr una textura esponjosa.</div>
+        </div>
+        <img src="ingredientes.jpg" alt="Ingredientes representados en una presentación de keke de chicha morada">
+      </div>
+    </section>
+
+    <section id="especial">
+      <h2 class="titulo">¿Qué lo hace especial?</h2>
+      <p class="intro">Más que un postre, es una forma de darle un giro creativo a un sabor muy rico y saludable para los estudiantes .</p>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="chicha-1.jpg" alt="Vaso de chicha morada">
+          <div class="contenido"><h3>Tradición que nos identifica</h3><p>Rescatamos el valor del maíz morado, un ingrediente tradicional que representa parte de nuestra cultura peruana.</p></div>
+        </article>
+        <article class="tarjeta">
+          <img src="chicha-2.jpg" alt="Porción de keke lista para servir">
+          <div class="contenido"><h3>Sabor para compartir</h3><p>Su textura esponjosa y su agradable sabor lo convierten en una opción ideal para disfrutar en familia o con amigos.</p></div>
+        </article>
+        <article class="tarjeta">
+          <img src="chicha-3.jpg" alt="Keke de chicha morada recién presentado">
+          <div class="contenido"><h3>Un toque diferente</h3><p>El color y el sabor del maíz morado le dan un estilo único a nuestro keke, convirtiéndolo en una propuesta novedosa y atractiva.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+<p style="text-align: center; font-size: 30px; font-weight: bold; max-width: 900px; margin: 20px auto;">
+  Innovación repostera con alma de tradición, transformando la cultura peruana en momentos de dulzura.
+</p>
+</p>
+<footer style="position: relative; padding: 30px 7%; min-height: 180px;">
+    
+    
+    <div style="position: absolute; left: 7%; top: 25px; text-align: left; line-height: 1.3;">
+  <strong>Integrantes:</strong><br>
+  Kelsy Castro<br>
+  Valeria Sandoval<br>
+  Chipa Patricia<br>
+  Byron Robles
+</div>
+</div>
+    <p><strong>El sabor de lo nuestro, en cada bocado.</strong></p>
+    <p><strong>4to C</strong></p>
+    <p>© 2026 · Presentación De producto de emprendimiento saludable </p>
+  </footer>
+  
+</body>
+</html>
